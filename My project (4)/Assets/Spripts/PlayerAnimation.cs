@@ -10,6 +10,7 @@ public class PlayerAnimation : MonoBehaviour
     private int spriteIndex;
     private void Awake() {
         spriteRenderer = GetComponent<SpriteRenderer>();
+        Debug.Log(sprites.Length);
     }
 
     private void Start() {
@@ -24,5 +25,6 @@ public class PlayerAnimation : MonoBehaviour
             spriteIndex = 0;
         }
         spriteRenderer.sprite = sprites[spriteIndex];
+        Debug.Log(spriteIndex);
     }
 }
